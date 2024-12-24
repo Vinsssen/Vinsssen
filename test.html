@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.css">
+    <title>Тест</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header-nav">
+            <div class="header-left">
+                <p>Молодежка</p>
+            </div>
+            <div class="header-right">
+                <a href="index.html">Описание</a>
+                <a href="Slovar.html">Словрь</a>
+                <a href="test.html" class="active">Тест</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="profile.html" id="username">Личный кабинет</a>
+                <div class="logout-section" id="logout-section">
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1 class="top-pagename">Тест</h1>
+        <section class="central-content">
+            <h2>Тест</h2>
+
+            <form id="quizForm" name="quizForm" novalidate>
+                <fieldset>
+                    <label for="q1">1. Кто главный тренер команды?</label>
+                    <input type="text" id="q1" name="q1">
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <label for="q2">2. Какая фамилия жены Гл. Тренера команды? </label>
+                    <input type="text" id="q2" name="q2">
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. сколько человек в хоккейной команде?  </legend>
+                    <label><input type="radio" name="q3" value="22"> 22 </label>
+                    <label><input type="radio" name="q3" value="21"> 21 </label>
+                    <label><input type="radio" name="q3" value="23"> 23</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>4.Вратарь команды? </legend>
+                    <label><input type="radio" name="q4" value="Бакин">Бакин</label>
+                    <label><input type="radio" name="q4" value="Микалян"> Микалян</label>
+                    <label><input type="radio" name="q4" value="Владимир"> Владимир</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>5.Сколько серий в сериале?</legend>
+                    <label><input type="radio" name="q5" value="222"> 222</label>
+                    <label><input type="radio" name="q5" value="260"> 260</label>
+                    <label><input type="radio" name="q5" value="245"> 245</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>6. сколько сезонов в сериале?</legend>
+                    <label><input type="radio" name="q6" value="6">6</label>
+                    <label><input type="radio" name="q6" value="4">4</label>
+                    <label><input type="radio" name="q6" value="7">7</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <div class="result-section">
+                    <span id="test-result"></span>
+                </div>
+
+                <button type="submit" id="submit-button">Ответить</button>
+            </form>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="socials-container">
+            <div class="contact-info">
+                               <p>&copy; 2024 . Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/test.js"></script>
+</body>
+
+</html>
